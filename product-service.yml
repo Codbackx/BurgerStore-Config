@@ -5,10 +5,8 @@ spring:
     #change credentials and create a database in MySQL with the name db_products_service
 
     url: jdbc:mysql://localhost:3306/db_products_service
-    #username: ${DB_MYSQL_USERNAME}
-    username : JeancaDeve
-    password: Kevicho_5593
-    #password: ${DB_MYSQL_PASSWORD}
+    username: ${DB_MYSQL_USERNAME}
+    password: ${DB_MYSQL_PASSWORD}
   jpa:
     generate-ddl: true
     show-sql: true
