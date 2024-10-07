@@ -2,7 +2,8 @@ spring:
   application:
     name: Product-Service
   datasource:
-    #change credentials and create a database in MySQL with the name db_products_service
+    #create environment variables with the names (DB_MYSQL_USERNAME AND DB_MYSQL_PASSWORD) 
+    #and create a database in mysql named db_products_service
 
     url: jdbc:mysql://localhost:3306/db_products_service
     username: ${DB_MYSQL_USERNAME}
