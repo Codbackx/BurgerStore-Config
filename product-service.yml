@@ -21,3 +21,11 @@ endpoint:
 
 server:
   port: 8085
+
+#eureka configuration
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
