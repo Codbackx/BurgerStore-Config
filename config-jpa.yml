@@ -1,7 +1,8 @@
 spring:
   jpa:
-    dialect: org.hibernate.dialect.MySQLDialect5
+    generate-ddl: true
+    show-sql: true
     properties:
-      show-sql: true
-      generate-auto: create-drop
-      
+      dialect: org.hibernate.dialect.MySQLDialect5
+    hibernate:
+      ddl-auto: create-drop
