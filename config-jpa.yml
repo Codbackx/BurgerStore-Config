@@ -1,0 +1,7 @@
+spring:
+  jpa:
+    dialect: org.hibernate.dialect.MySQLDialect5
+    properties:
+      show-sql: true
+      generate-auto: create-drop
+      
