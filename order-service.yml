@@ -7,3 +7,6 @@ server:
 
 database:
   name: db_orders_service
+
+endpoint:
+  path: /codycod/corporation/v1
