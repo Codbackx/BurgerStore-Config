@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Order Service
+
+server:
+  port: 8084
+
+database:
+  name: db_orders_service
