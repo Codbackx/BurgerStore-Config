@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Customer Service
+
+endpoint:
+  path: codycod/corporation/v1
+
+database:
+  name: db_curtomers_service
+
+server:
+  port: 8083
