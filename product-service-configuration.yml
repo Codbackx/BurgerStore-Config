@@ -9,7 +9,7 @@ spring:
       - ${cofigserver.import.uri}/eureka-client-configuration
 
 endpoint:
-  path: /codycod/corporation/v1/products
+  path: {codycod.uri}/products
 
 database:
   name: db_products_service
