@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: BurgerStore [Eureka-Server]
+
 server:
   port: 8761
 
