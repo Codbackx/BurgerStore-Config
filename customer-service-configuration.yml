@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: BurgerStore [Customer-Service]
+
+database:
+  name: db_customers_service
+
+endpoint:
+  path: codycod/corporation/v1/customers
+
+server:
+  port: 8083
