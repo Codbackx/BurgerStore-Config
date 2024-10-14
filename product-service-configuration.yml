@@ -1,9 +1,9 @@
 spring:
   application:
-    name: Product-Service
+    name: BurgerStore [Product-Service]
 
 endpoint:
-  path: /codycod/corporation/v1
+  path: /codycod/corporation/v1/products
 
 database:
   name: db_products_service
