@@ -4,9 +4,9 @@ spring:
   #setting for this service
   config:
     import:
-      - ${cofigserver.import.uri}/database-configuration
-      - ${cofigserver.import.uri}/jpa-configuration
-      - ${cofigserver.import.uri}/eureka-client-configuration
+      - ${configserver.import.uri}/database-configuration
+      - ${configserver.import.uri}/jpa-configuration
+      - ${configserver.import.uri}/eureka-client-configuration
 
 endpoint:
   path: ${codycod.uri}/products
