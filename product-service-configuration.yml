@@ -1,6 +1,12 @@
 spring:
   application:
     name: BurgerStore [Product-Service]
+  #setting for this service
+  config:
+    import:
+      - ${cofigserver.import.uri}/database-configuration
+      - ${cofigserver.import.uri}/jpa-configuration
+      - ${cofigserver.import.uri}/eureka-client-configuration
 
 endpoint:
   path: /codycod/corporation/v1/products
