@@ -1,0 +1,3 @@
+configserver:
+  import:
+    uri: configserver:http://localhost:8888
