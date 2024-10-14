@@ -1,6 +1,6 @@
 spring:
   application:
-    name: BurgerStore [Product-Service]
+    name: BurgerStore - Product-Service
   #setting for this service
   config:
     import:
