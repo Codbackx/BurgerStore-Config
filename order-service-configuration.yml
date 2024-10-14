@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Order Service
+    name: BurgerStore [Order-Service]
 
 server:
   port: 8084
@@ -9,4 +9,4 @@ database:
   name: db_orders_service
 
 endpoint:
-  path: /codycod/corporation/v1
+  path: /codycod/corporation/v1/orders
