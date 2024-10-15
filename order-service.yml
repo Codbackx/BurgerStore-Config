@@ -1,6 +1,6 @@
 spring:
   application:
-    name: BurgerStore [Order-Service]
+    name: order-service
 
 server:
   port: 8084
