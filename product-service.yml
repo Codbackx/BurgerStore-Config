@@ -1,9 +1,7 @@
 spring:
   application:
     name: BurgerStore [Product Service]
-  config:
-    import: ${configserver.import.uri}/database-configuration
-      
+
 
 endpoint:
   path: ${codycod.uri}/products
