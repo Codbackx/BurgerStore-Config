@@ -2,12 +2,11 @@ spring:
   application:
     name: BurgerStore [Product Service]
       
-
-endpoint:
-  path: ${codycod.uri}/products
-
 database:
   name: db_products_service
 
 server:
   port: 8085
+
+endpoint:
+  path: /codycod/corporation/v1
