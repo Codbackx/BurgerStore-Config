@@ -1,6 +1,6 @@
 spring:
   application:
-    name: BurgerStore [Customer-Service]
+    name: customer-service
 
 database:
   name: db_customers_service
