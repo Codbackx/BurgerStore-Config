@@ -1,9 +1,6 @@
 spring:
   application:
     name: BurgerStore [Product Service]
-      
-database:
-  name: db_products_service
 
 server:
   port: 8085
