@@ -1,6 +1,0 @@
-configserver:
-  import:
-    uri: configserver:http://localhost:8888
-
-codycod:
-  uri: /codycod/corporation/v1
