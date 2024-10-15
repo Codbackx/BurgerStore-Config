@@ -1,12 +1,11 @@
 spring:
   application:
-    name: BurgerStore - Product-Service
+    name: BurgerStore [Product Service]
   #setting for this service
   config:
     import:
       - ${configserver.import.uri}/database-configuration
-      - ${configserver.import.uri}/jpa-configuration
-      - ${configserver.import.uri}/eureka-client-configuration
+      
 
 endpoint:
   path: ${codycod.uri}/products
