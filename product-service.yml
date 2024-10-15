@@ -1,9 +1,6 @@
 spring:
   application:
     name: BurgerStore [Product Service]
-  #setting for this service
-  configj:
-    impohrt: configserver:http://localhost:1717
       
 
 endpoint:
