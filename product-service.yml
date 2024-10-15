@@ -1,17 +1,3 @@
 spring:
   application:
     name: BurgerStore [Product Service]
-  #setting for this service
-  config:
-    import: ${configserver.import.uri}/database-configuration
-      
-
-endpoint:
-  path: ${codycod.uri}/products
-
-database:
-  name: db_products_service
-
-server:
-  port: 8085
-
