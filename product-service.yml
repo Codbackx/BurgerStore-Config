@@ -1,7 +1,10 @@
 spring:
   application:
     name: BurgerStore [Product Service]
-
+  #setting for this service
+  config:
+    import: ongpobg33
+      
 
 endpoint:
   path: ${codycod.uri}/products
