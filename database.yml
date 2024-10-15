@@ -1,7 +1,5 @@
 spring:
   datasource:
-    #create environment variables with the names (DB_MYSQL_USERNAME AND DB_MYSQL_PASSWORD) 
-    #and create a database in mysql named of param value database.name
     url: ${DB_MYSQL_URL}
     password : ${DB_MYSQL_PASSWORD}
     username : ${DB_MYSQL_USERNAME}
