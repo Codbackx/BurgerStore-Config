@@ -3,7 +3,7 @@ spring:
     name: BurgerStore [Product Service]
   #setting for this service
   config:
-    import: ongpobg33
+    import: configserver:http://localhost:1717
       
 
 endpoint:
