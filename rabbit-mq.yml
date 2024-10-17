@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    host: localhost
+    host: rabbit-mq
     password: ${RABBIT_PASSWORD}
     username: ${RABBIT_USERNAME}
     port: 5672
