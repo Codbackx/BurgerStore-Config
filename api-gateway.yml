@@ -5,7 +5,7 @@ spring:
     gateway:
       routes:
         - id: product-service
-          uri: http://localhost:8085
+          uri: http://product-service:8085
           predicates:
             - Path=/codycod/corporation/v1/products/**
             - Path=/codycod/corporation/v1/categories/**
