@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: product-service
+          uri: lb://PRODUCT-SERVICE
+          predicates: 
+            -Path=${endpoint.path}/products/**
+            -Path=${endpoint.path}/categories/**
+
+        - id: order-service
+          uri: lb://ORDER-SERVICE
+          predicates: 
+            -Path=${endpoint.path}/orders/**
+            -Path=${endpoint.path}/message/**
+
+        - id: customer-service
+          uri:  lb://CUSTOMER-SERVICE
+          predicates: 
+            -Path=${endpoint.path}/customers/**
