@@ -22,4 +22,4 @@ spring:
             - Path=/codycod/corporation/v1/customers/**
 
 server:
-  port: 8091
+  port: 8090
