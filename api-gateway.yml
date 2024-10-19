@@ -1,24 +1,28 @@
+
 spring:
   application:
     name: api-gateway
   cloud:
     gateway:
-      routes:
-        - id: product-service
-          uri: lb://PRODUCT-SERVICE
-          predicates: 
-            -Path=${endpoint.path}/products/**
-            -Path=${endpoint.path}/categories/**
+      mvc:
+        routes:
+          - id: product-service
+            uri: lb://PRODUCT-SERVICE
+            predicates: 
+              -Path=${endpoint.path}/products/**
+              -Path=${endpoint.path}/categories/**
 
-        - id: order-service
-          uri: lb://ORDER-SERVICE
-          predicates: 
-            -Path=/codycod/corporation/v1/orders/**,${endpoint.path}/message/**
+          - id: order-service
+            uri: lb://ORDER-SERVICE
+            predicates: 
+              -Path=/codycod/corporation/v1/orders/**,${endpoint.path}/message/**
 
-        - id: customer-service
-          uri:  lb://CUSTOMER-SERVICE
-          predicates: 
-            -Path=${endpoint.path}/customers/**
+          - id: customer-service
+            uri:  lb://CUSTOMER-SERVICE
+            predicates: 
+              -Path=${endpoint.path}/customers/**
             
 server:
   port: 8090
+
+
