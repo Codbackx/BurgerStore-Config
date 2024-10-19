@@ -20,3 +20,6 @@ spring:
           uri:  lb://CUSTOMER-SERVICE
           predicates: 
             -Path=${endpoint.path}/customers/**
+            
+server:
+  port: 8090
