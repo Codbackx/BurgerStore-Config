@@ -5,21 +5,10 @@ spring:
     gateway:
       routes:
         - id: product-service
-          uri: http://product-service:8085
+          uri: ln://PRODUCT-SERVICE
           predicates:
             - Path=/codycod/corporation/v1/products/**
             - Path=/codycod/corporation/v1/categories/**
-
-        - id: order-service
-          uri: lb://ORDER-SERVICE
-          predicates:
-            - Path=/codycod/corporation/v1/orders/**
-            - Path=/codycod/corporation/v1/message/**
-
-        - id: customer-service
-          uri: lb://CUSTOMER-SERVICE
-          predicates:
-            - Path=/codycod/corporation/v1/customers/**
 
 server:
   port: 8090
