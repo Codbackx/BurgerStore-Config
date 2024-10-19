@@ -8,19 +8,19 @@ spring:
           - id: product-service
             uri: lb://PRODUCT-SERVICE
             predicates: 
-              - Path=${endpoint.path}/products/**
-              - Path=${endpoint.path}/categories/**
+              - Path=/codycod/corporation/v1/products/**
+              - Path=/codycod/corporation/v1/categories/**
 
           - id: order-service
             uri: lb://ORDER-SERVICE
             predicates: 
-              - Path=${endpoint.path}/orders/**
-              - Path=${endpoint.path}/message/**
+              - Path=/codycod/corporation/v1/orders/**
+              - Path=/codycod/corporation/v1/message/**
 
           - id: customer-service
             uri: lb://CUSTOMER-SERVICE
             predicates: 
-              - Path=${endpoint.path}/customers/**
+              - Path=/codycod/corporation/v1/customers/**
             
 server:
   port: 8090
