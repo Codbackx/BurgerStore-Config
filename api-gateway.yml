@@ -16,7 +16,7 @@ spring:
         - id: order-service
           uri: lb://ORDER-SERVICE
           predicates: 
-            -Path=${endpoint.path}/orders/**,${endpoint.path}/message/**
+            -Path=/codycod/corporation/v1/orders/**,${endpoint.path}/message/**
 
         - id: customer-service
           uri:  lb://CUSTOMER-SERVICE
