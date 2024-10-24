@@ -1,12 +1,13 @@
 spring:
   application:
     name: api-gateway
-  gateway:
-    routes:
-      - id: product-service
-        uri: lb://product-service
-        predicates:
-          - Path=/codycod/corporation/v1/products/**
+  cloud:
+    gateway:
+      routes:
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/codycod/corporation/v1/products/**
 
 server:
   port: 8090
