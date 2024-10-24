@@ -11,11 +11,11 @@ spring:
         - id: order-service
           uri: lb://order-service
           predicates:
-            - Path=${ENDPOINT_PATH}/orders/**
+            - Path=${ENDPOINT_PATH}/orders/**,${ENDPOINT_PATH}/message/**
         - id: customer-service
           uri: lb://customer-service
           predicates:
-            - Path=${ENDPOINT_PATH}/customers/**,${ENDPOINT_PATH}/message/**
+            - Path=${ENDPOINT_PATH}/customers/**
             
 
 server:
