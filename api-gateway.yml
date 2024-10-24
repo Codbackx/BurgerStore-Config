@@ -7,9 +7,8 @@ spring:
         - id: product-service
           uri: lb://product-service
           predicates:
-            Path:
-              - ${ENDPOINT_PATH}/products/**
-              - ${ENDPOINT_PATH}/categories/**
+            - Path=${ENDPOINT_PATH}/products/**
+         
             
 
 server:
