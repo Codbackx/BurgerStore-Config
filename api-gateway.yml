@@ -8,6 +8,7 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=${ENDPOINT_PATH}/products/**
+            - Path=${ENDPOINT_PATH}/categories/**
          
             
 
