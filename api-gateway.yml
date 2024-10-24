@@ -1,17 +1,12 @@
 spring:
   application:
     name: api-gateway
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
-    gateway:
-      routes:
-        - id: product-service
-          uri: lb://PRODUCT-SERVICE
-          predicates:
-            - Path=/codycod/corporation/v1/products/**
-            - Path=/codycod/corporation/v1/categories/**
+  gateway:
+    routes:
+      - id: product-service
+        uri: lb://product-service
+        predicates:
+          - Path=/codycod/corporation/v1/products/**
 
 server:
   port: 8090
