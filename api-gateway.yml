@@ -7,7 +7,7 @@ spring:
         - id: product-service
           uri: lb://product-service
           predicates:
-            - Path=/codycod/corporation/v1/products/**
+            - Path=${ENDPOINT_PATH}/products/**,${ENDPOINT_PATH}/categories/**
 
 server:
   port: 8090
