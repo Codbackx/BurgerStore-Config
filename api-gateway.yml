@@ -16,6 +16,10 @@ spring:
           uri: lb://customer-service
           predicates:
             - Path=${ENDPOINT_PATH}/customers/**
+        - id: message-service
+          uri: lb://message-service
+          predicates:
+            - Path=${ENDPOINT_PATH}/message/**
             
          
             
