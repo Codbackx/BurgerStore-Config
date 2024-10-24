@@ -7,8 +7,16 @@ spring:
         - id: product-service
           uri: lb://product-service
           predicates:
-            - Path=${ENDPOINT_PATH}/products/**
-            - Path=${ENDPOINT_PATH}/categories/**
+            - Path=${ENDPOINT_PATH}/products/**,${ENDPOINT_PATH}/categories/**
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path=${ENDPOINT_PATH}/orders/**
+        - id: customer-service
+          uri: lb://customer-service
+          predicates:
+            - Path=${ENDPOINT_PATH}/customers/**
+            
          
             
 
