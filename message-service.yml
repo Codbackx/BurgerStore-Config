@@ -6,4 +6,4 @@ endpoint:
   path: /codycod/corporation/v1
 
 server:
-  port: 8097
+  port: 8082
