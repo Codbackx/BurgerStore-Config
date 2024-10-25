@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: message-service
+
+endpoint:
+  path: /codycod/corporation/v1
+
+server:
+  port: 8097
